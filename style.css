@@ -126,6 +126,18 @@
 
 
 
+@media (max-width: 600px) {
+  .title {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .item i {
+    font-size: 18px !important; /* smaller size on mobile */
+  }
+}
 
 
 
@@ -133,6 +145,29 @@
 
 
 
+
+
+
+
+
+
+.footer-logo-box {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 260px;
+  height: 200px;
+  object-fit: contain; /* keeps logo from stretching */
+ 
+}
+
+@media (max-width: 600px) {
+  .footer-logo {
+    width: 240px;
+    height: 190px;
+  }
+}
 
 
 
@@ -143,6 +178,8 @@
     max-width: 1100px;
     margin: 80px auto;
     padding: 0 20px;
+
+    
    
   }
 
@@ -151,14 +188,16 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     justify-items: center;
+   
+ 
   }
 
   /* Card */
   .stat-card {
-    background: #ffffff;
-    border-radius: 12px;
+    background: whitesmoke;
+    border-radius: 30px;
     padding: 40px 30px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 30px rgba(208, 45, 45, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-align: center;
@@ -167,7 +206,7 @@
   .stat-card:hover,
   .stat-card:active {
     transform: translateY(-8px);
-    box-shadow: 0 16px 45px rgba(0,0,0,0.12);
+    box-shadow: 0 16px 45px rgb(240, 60, 30);
   }
 
   /* Number */
@@ -760,11 +799,14 @@ background-color: whitesmoke;
   height: 100%;
   background-color:  lightgray;
   z-index: 1;
+ border-radius: 45px 45px 0 0;
+ 
   }
   
   
   
   .new-flex-container {
+    color: white;
   position: relative;
   z-index: 3;
   display: flex;
