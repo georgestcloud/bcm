@@ -1,4 +1,12 @@
+/* Hover effect */
+.mv-header:hover {
+  color: red;
+}
 
+/* Make the + icon also turn red */
+.mv-header:hover .mv-icon {
+  color: red;
+}
 
 
 
@@ -1209,3 +1217,4 @@
 
 
  
+
