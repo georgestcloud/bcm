@@ -1,12 +1,4 @@
-/* Hover effect */
-.mv-header:hover {
-  color: red;
-}
 
-/* Make the + icon also turn red */
-.mv-header:hover .mv-icon {
-  color: red;
-}
 
 
 
@@ -17,6 +9,7 @@
     .about-section {
       padding: 60px 20px;
       background: whitesmoke;
+    
     }
 
     .about-container {
@@ -24,8 +17,10 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      gap: 40px;
+      gap: 20px;
       align-items: flex-start;
+       font-size: 15px !important;
+    
     }
 
     /* LEFT CONTENT */
@@ -1216,5 +1211,12 @@
 
 
 
- 
+ /* Hover effect */
+.mv-header:hover {
+  color: red;
+}
 
+/* Make the + icon also turn red */
+.mv-header:hover .mv-icon {
+  color: red;
+}
