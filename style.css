@@ -1,0 +1,1010 @@
+
+
+@media (max-width: 700px) {
+  .carousel {
+    height: 220px !important;
+  }
+
+  .slide {
+    object-fit: contain;    /* show full image, no cropping */
+    background: #fff;       /* optional: avoids ugly gaps */
+  }
+}
+
+
+
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* slides */
+.slides {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* IMPORTANT: no zoom */
+  
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: red;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* star pagination */
+.page-dot {
+  width: 18px;
+  height: 18px;
+  background: blue;
+  cursor: pointer;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+/* active star */
+.page-dot.active {
+  background: red;
+}
+
+/* fallback (if clip-path unsupported) */
+@supports not (clip-path: polygon(50% 0%, 61% 35%)) {
+  .page-dot {
+    border-radius: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-wrapper {
+    text-align: right;       /* Align everything inside to the right */
+    padding-right: 20px;     /* Space from the edge of the page */
+
+}
+
+.social-container {
+    display: inline-flex;    /* Keep icons in a row */
+    gap: 13px;               /* Space between icons */
+}
+
+.social-container a {
+
+    font-size: 29px;
+    text-decoration: none;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  color: black;
+      line-height: 1.5; 
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  }
+  
+  
+  
+  .kala { color: #B8705D; }
+  
+  @media (max-width: 800px) {
+  .eze {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+    padding: 12px;
+  }
+  }
+  
+  
+  @media (max-width: 800px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden; 
+      }
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  h1 {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  }
+  
+  
+  @media (max-width: 800px) {
+    h1 {
+        font-size: 22px; 
+        text-align: center; 
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .image {
+    box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  }
+  
+  @media (min-width: 1400px) {
+            .image {
+                width: 150px;
+                height: 150px; 
+            }
+        }
+  
+  
+  
+  
+  
+  .container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  }
+  
+  .blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(3px); /* Adjust the blur amount as needed */
+  }
+  
+  .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  backdrop-filter: blur(1px); /* Adjust the overlay blur amount as needed */
+  }
+  
+  
+  
+  .container-fluid {
+  background-size: cover;
+  position: relative;
+  }
+  
+  .flex-item {
+  padding: 20px;
+  flex: 0 0 33%;
+  height: 100px;
+  box-sizing: border-box;
+  }
+  
+  .custom-container {
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  z-index: 0;
+    position: relative;
+    overflow: hidden; 
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV1dW5zOWdjZTJ3NnF5eHYxdGRzdjQybGo4cXR6NXUyajlxaHJqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f94coCqt6CgXMJs2FR/giphy.webp'); 
+    background-size: cover; 
+    border-top: 35px; 
+  }
+  
+  .container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D6A295;
+  opacity: 0.5;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        .custom-list {
+  color: black;
+            list-style-type: none; 
+            padding: 0; 
+        }
+  
+        .custom-list li {
+            padding-top: 19px;
+        }
+  .custom-list li a {
+            text-decoration: none;
+            font-size: large; 
+            color: black;
+            transition: color 0.3s ease;
+        }
+  
+       
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .asake {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .left-panel {
+       text-align: justify;
+  justify-content: center;
+    align-items: center;
+  flex: 0 0 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  
+  .right-panel {
+    padding: 20px;
+       text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+        line-height: 1.5; 
+  
+  z-index: 50;
+  flex: 1; 
+  padding: 0px 20px 20px 10px;
+  box-sizing: border-box;
+  }
+  
+  
+  
+  @media (max-width: 800px) {
+  .asake {
+    
+    padding-left: 15px;
+    padding-right: 15px;
+  
+      flex-direction: column; /* Stack items vertically */
+  }
+  .left-panel {
+    padding: 20px;
+      width: 100%; /* Each panel takes full width */
+  }
+  .right-panel {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+  }
+  }
+  
+  
+  .card {
+    
+  width: 310px;
+  height: 250px;
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  overflow: hidden;
+  border-radius: 20px;
+  }
+  
+  .card img {
+  width: 310px;
+  
+  height: 250px;
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  border-radius: 20px;
+  }
+  
+  @media (max-width: 800px) {
+  .card img {
+    object-fit: cover;
+    
+    width: 275px;
+      height: 200px;
+  }
+  .card {
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+     height: 200px;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.gsc {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .gsc-left {
+    gap: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 50%;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 14px;
+  }
+  
+  .gsc-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .gsc {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 800px) {
+  .new-flex-container {
+    flex-direction: column;
+  }
+  }
+  
+  
+  .new-custom-container {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  height: 100%; 
+  }
+  
+  .new-container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #B8705D;
+  z-index: 1;
+  }
+  
+  
+  
+  .new-flex-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 800px) {
+  .new-flex-container {
+    flex-direction: column;
+  }
+  }
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  .address {
+  display: flex;
+  align-items: center;
+  }
+  .azonto {
+  text-align: center;
+  }
+  
+  
+  .w3-third { text-align: center;
+    font-style: bold;}
+    
+  
+  
+  
+  
+  
+  
+    
+  
+    
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  body {
+  background: #f6efe9; /* soft beige like your screenshot */
+}
+
+.insurance-types {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.insurance-types .title {
+  font-size: 17px;
+  color: #092A95;
+  margin-bottom: 40px;
+  letter-spacing: 0.3px;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.item span {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* subtle hover like modern insurance sites */
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.item:hover span {
+  color: #000;
+}
+
+
+.item i {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 12px;
+}
+  
+/* When screen width is below 800px */
+@media (max-width: 800px) {
+  .item i {
+    font-size: 20px;
+  }
+}
+  
+  /* smooth transition */
+.item i,
+.item span {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* hover (desktop) */
+.item:hover i,
+.item:hover span {
+  color: #d62828; /* red */
+  transform: scale(1.1);
+}
+
+/* active / tap (touch screens) */
+.item:active i,
+.item:active span {
+  color: #d62828;
+  transform: scale(1.1);
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+ 
+  
+  
+  /* Navbar link color */
+.elephant-nav-list a span {
+   
+    color: #092A95 !important;  /* Set your blue color */
+    font-weight: bold;
+}
+
+  
+  .elephant-navbar {
+    z-index: 999;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 21px;
+    padding-left: 10px;
+    background-color: #fff;
+  }
+  .elephant-nav-list {
+    z-index: 999;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+  }
+  .elephant-nav-list li {
+    display: inline;
+  }
+  .elephant-nav-list a {
+    text-decoration: none;
+    color: #092A95;
+    line-height: 10px;
+    
+    position: relative; /* Added position relative for hover effect */
+  }
+  .elephant-nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FF0000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out;
+  }
+  .elephant-nav-list a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+ .elephant-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+  /* Mobile dropdown toggle */
+.elephant-dropdown-content.show {
+  display: block !important;
+}
+
+
+.elephant-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  right: 0;
+  top: 40px;
+  z-index: 999;
+}
+
+
+
+  
+  
+  
+  @media screen and (max-width: 800px) {
+   .elephant-menu-button {
+    font-size: 30px;
+      padding-right:0px;
+     }
+  }
+  
+  
+  .elephant-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #092A95;
+    cursor: pointer;
+  }
+  @media (max-width: 800px) {
+    .elephant-nav-list {
+      z-index: 999;
+      display: none;
+ 
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 105px; /* Adjust according to your navbar height */
+      right: 10px;
+     
+
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(54, 36, 36, 0.2);
+      height: auto;
+    }
+    .elephant-nav-list.show {
+      display: flex;
+    }
+    .elephant-menu-button {
+      display: block;
+    
+    }
+  }
+  .elephant-navbar img {
+    max-width: 220px;
+    max-height: 130px;
+  }
+
+  
+ 
+  .elephant-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  
+  
+ 
+/* Official brand colors */
+.social-container a.facebook {
+    color: #1877F2;  /* Facebook blue */
+}
+
+.social-container a.twitter {
+    color: #1DA1F2 ;  /* Twitter blue */
+}
+
+.social-container a.instagram {
+    color: #C13584;  /* Instagram primary pink/magenta color */
+}
+  
+  
+  
+  
+  @media screen and (max-width: 800px) {
+    .elephant-navbar img {
+      max-width: 170px;
+    
+      max-height: 115px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .heart {
+    width: 100%;
+    max-width: 100%; 
+    overflow: hidden; 
+    position: relative; /* Needed for the pseudo-element */
+  }
+  .lung {
+    width: 100%;
+    max-height: 370px;
+    height: 100%;
+  
+    box-shadow: 0 4px 8px 0 #Ab5943; 
+  }
+  
+  .dog { font-size: 20px}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
