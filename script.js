@@ -61,3 +61,17 @@ startAutoSlide();
 
 
 
+
+
+    document.querySelectorAll('.mv-header').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+
+        document.querySelectorAll('.mv-item').forEach(i => {
+          if (i !== item) i.classList.remove('active');
+        });
+
+        item.classList.toggle('active');
+      });
+    });
+
