@@ -32,22 +32,38 @@
     }
 
     .about-left h2 {
-      font-size: 28px;
+      font-size: 27px;
       margin: 10px 0 20px;
       color: #003366;
     }
+
+    @media (max-width: 700px) {
+  .about-left h2 {
+    font-size: 23px;
+  }
+}
 
     .about-left p {
       font-size: 15px;
       line-height: 1.7;
       color: #555;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
 
     /* RIGHT ACCORDION */
     .about-right {
       width: 100%;
+      margin-top: 20px;
     }
+
+    @media (max-width: 500px) {
+  .about-right {
+    margin-top: 0;
+  }
+}
+
+
+    
 
     .mv-item {
       border: 1px solid #e5e5e5;
@@ -60,8 +76,8 @@
       padding: 18px 20px;
       background: #ffffff;
       border: none;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 13px;
+      font-weight: 630;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -73,7 +89,7 @@
     }
 
     .mv-icon {
-      font-size: 22px;
+      font-size: 20px;
       transition: transform 0.3s ease;
     }
 
@@ -839,18 +855,26 @@
 .insurance-types .title {
   font-size: 17px;
   color: #092A95;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   letter-spacing: 0.3px;
 }
 
 .icons-row {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
+  color: blue;
   flex-wrap: wrap;
 }
 
+.icons-row .item i {
+  color: #092A95; /* insurance-style blue */
+  font-size: 32px; /* adjust if needed */
+}
+
 .item {
+  color: blue;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1019,7 +1043,7 @@
   /* Navbar link color */
 .elephant-nav-list a span {
    
-    color: #092A95 !important;  /* Set your blue color */
+    color: blue !important;  /* Set your blue color */
     font-weight: bold;
 }
 
