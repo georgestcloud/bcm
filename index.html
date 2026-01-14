@@ -156,25 +156,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="carousel">
   <div class="slides">
     <img src="image1.png" class="slide active">
@@ -189,64 +170,6 @@
 
 <!-- pagination -->
 <div class="pagination"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -306,6 +229,40 @@
 
 
 
+
+
+<section class="stats-section">
+  <div class="stats-grid">
+
+    <!-- CARD 1 -->
+    <div class="stat-card">
+      <div class="stat-number" data-target="9600">0</div>
+      <div class="stat-title">Policies Issued</div>
+      <div class="stat-text">
+        Providing reliable coverage to safeguard what matters most.
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="stat-card">
+      <div class="stat-number" data-target="65">0</div>
+      <div class="stat-title"><span class="highlight">Years</span> in Business</div>
+      <div class="stat-text">
+        Protecting Nigerians for over 25 years.
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="stat-card">
+      <div class="stat-number" data-target="99">0</div>
+      <div class="stat-title">Claim Settlement Rate</div>
+      <div class="stat-text">
+        Ensuring satisfaction with every client, by trusted solutions.
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -424,6 +381,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 </script>
+
+
+
+<script>
+  const counters = document.querySelectorAll('.stat-number');
+  let started = false;
+
+  function startCounting() {
+    if (started) return;
+    started = true;
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const isPercent = counter.textContent.includes('%') || target <= 100;
+      const duration = 2000;
+      const startTime = performance.now();
+
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.floor(progress * target);
+
+        counter.textContent = value.toLocaleString() + (counter === counters[2] ? '%' : '+');
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+
+      requestAnimationFrame(update);
+    });
+  }
+
+  /* Trigger when visible */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounting();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(document.querySelector('.stats-section'));
+</script>
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-xxxxxx" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
