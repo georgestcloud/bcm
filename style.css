@@ -12,14 +12,14 @@
 /* Neutral fade so text is readable */
 .footer-overlay {
   background: rgba(0, 0, 0, 0.45); /* NOT yellow */
-  padding: 60px 40px;
+ padding: 0 40px;
   border-radius: 40px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 80px;
 }
 
 .footer-left {
@@ -33,7 +33,7 @@
 
 .footer-text {
   text-align: justify;
-  font-size: 14px;
+  font-size: 13px;
 
  text-align: justify;
   max-width: 420px;
@@ -42,7 +42,7 @@
 /* SOCIAL ICONS */
 .social-icons {
   display: flex;
-  gap: 12px;
+  gap: 13px;
 }
 
 .social-icons a {
@@ -86,7 +86,8 @@
 }
 
 .footer-column h4 {
-  font-size: 16px;
+  font-size: 13px;
+  margin-top: 90px;
   margin-bottom: 15px;
 }
 
@@ -94,16 +95,18 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 13px;
 }
 
 .footer-column li {
   margin-bottom: 10px;
+  font-size: 13px;
 }
 
 .footer-column a {
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* MOBILE */
@@ -132,8 +135,13 @@
 
 
 
+
+
+
+
 @media (max-width: 600px) {
   .footer-container {
+    gap: 40px;
     flex-direction: column;
     align-items: center;   /* centers blocks */
     text-align: center;    /* centers text */
@@ -147,6 +155,7 @@
   }
 
   .footer-text {
+    font-size: 13px;
     text-align: center; /* override justify on mobile */
   }
 
@@ -430,7 +439,7 @@
 
 @media (max-width: 700px) {
   .carousel {
-    height: 220px !important;
+    height: 273px !important;
   }
 
   .slide {
@@ -1052,7 +1061,7 @@ background-color: whitesmoke;
   
   
   .insurance-section {
-  padding: 60px 40px;
+  padding: 0px 40px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -1069,7 +1078,7 @@ background-color: whitesmoke;
 
 .insurance-title span {
   display: block;
-  width: 80px;
+  width: 100px;
   height: 3px;
   background: #4a7dbd;
   margin: 12px auto 0;
