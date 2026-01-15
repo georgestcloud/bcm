@@ -1,598 +1,1544 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="description" content="B.C
-Madiebo & Company Insurance Brokers Limited">
-
-<meta name="title" content="BCM Insurance Brokers Limited">
-
-<meta name="keywords" content="Insurance, insurance brokers">
 
 
+.footer {
+  background-image: url("BCM.png"); /* YOUR IMAGE */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 40px;
+}
 
- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  >
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+/* Neutral fade so text is readable */
+.footer-overlay {
+  background: rgba(0, 0, 0, 0.45); /* NOT yellow */
+ padding: 0 40px;
+  border-radius: 40px;
+}
 
-<meta name="author" content="BCM Insurance Brokers Limited">
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="icon" type="image/png" href="logo.png"> 
+.footer-left {
+  flex: 1.5;
+}
 
-  <title>BCM Insurance Brokers Limited</title>
-  <link rel="stylesheet" href="style.css">
-
-  
-  
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-  <!-- Title -->
-  
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="style.css">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  
-  
-  
-  <!-- Main Style CSS -->
-  <link rel="stylesheet" href="sstyle.css">
-  <!-- Responsive Style CSS -->
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
-
-  
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-<!-- Include Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Include Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-  <style>
-
+.footer-logo {
+  width: 190px;
  
+}
 
-  </style>
-</head>
-<body>
+.footer-text {
+  text-align: justify;
+  font-size: 13px;
+
+ text-align: justify;
+  max-width: 420px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 13px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+   transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
 
 
- <div class="social-wrapper">
-    <div class="social-container">
-        <a href="https://facebook.com" target="_blank" class="facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-       
-        <a href="https://www.instagram.com/bc_madieboinsurancebroker?igsh=c2ZmeTYzdGxreHc5" target="_blank" class="instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-</div>
+/* Mouse hover */
+.social-icons a:hover {
+  box-shadow: 
+    0 0 6px #ff0000,
+    0 0 14px #ff0000,
+    0 0 22px #ff0000;
+  transform: translateY(-2px);
+}
+
+/* Touch / focus */
+.social-icons a:active,
+.social-icons a:focus {
+  box-shadow: 
+    0 0 8px #ff0000,
+    0 0 18px #ff0000,
+    0 0 26px #ff0000;
+}
 
 
+
+/* COLUMNS */
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h4 {
+  font-size: 13px;
+  margin-top: 90px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .footer-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-overlay {
+    padding: 40px 20px;
+  }
+
+  .footer-text,
+  .footer-column a {
+    text-align: justify;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-column h4 {
+    margin-top: 25px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .footer-container {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;   /* centers blocks */
+    text-align: center;    /* centers text */
+  }
 
   
- 
-  
-  <nav class="elephant-navbar">
-    <img src="logo.png" alt="Logo" class="elephant-nav-img">
-    <ul class="elephant-nav-list">
-      <li class="oak"><a href="index.html"><span style="color: black; line-height: 5px; letter-spacing: -0.08em; font-size: 13pt; font-family: Helvetica;">Home</span></a></li>
+  .footer-left,
+  .footer-column {
+    width: 100%;
+    align-items: center;
+  }
 
-      <div class="elephant-dropdown">
-      <li class="pine"><a href="about.html"><span style="color: black; line-height: 5px; letter-spacing: -0.08em; font-size: 13pt; font-family: Helvetica;">About Us</span></a></li>
-       
-      </div>    
+  .footer-text {
+    font-size: 13px;
+    text-align: center; /* override justify on mobile */
+  }
 
-      <li class="pine"><a href="#puss"><span style="color: black; line-height: 5px; letter-spacing: -0.08em; font-size: 13pt; font-family: Helvetica;">Services</span></a></li>
+  .social-icons {
+    justify-content: center;
+  }
+}
 
-      <li class="willow"><a href="csr.html"><span style="color: black; line-height: 5px; letter-spacing: -0.08em; font-size: 13pt; font-family: Helvetica;">Claims</span></a></li>
 
 
-      <div class="elephant-dropdown">
-      <li class="birch"><a href="govern.html"><span style="color: black; line-height: 5px; letter-spacing: -0.08em; font-size: 13pt; font-family: Helvetica;">Contact Us</span></a></li>
 
-       </div>
-    </div>    
 
-    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .about-section {
+      padding: 60px 20px;
+      background: whitesmoke;
+    
+    }
+
+    .about-container {
+      max-width: 1200px;
+    
+      padding-left: 35px;
+  padding-right: 35px;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 20px;
+      align-items: flex-start;
+       font-size: 15px !important;
+    
+    }
+
+    /* LEFT CONTENT */
+    .company-label {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #777;
+      text-transform: uppercase;
+    }
+
+    .about-left h2 {
+      font-size: 27px;
+      margin: 10px 0 20px;
+      color: #003366;
+    }
+
+    @media (max-width: 700px) {
+  .about-left h2 {
+    font-size: 23px;
+  }
+}
+
+    .about-left p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    /* RIGHT ACCORDION */
+    .about-right {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 500px) {
+  .about-right {
+    margin-top: 0;
+  }
+}
 
 
     
 
-    <button class="elephant-menu-button" id="elephant-menuButton"><i class="fas fa-bars"></i></button>
-   
-    </div>
-  </nav>
-
-</div></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="carousel">
-  <div class="slides">
-    <img src="image1.png" class="slide active">
-    <img src="img2.jpg" class="slide">
-    <img src="img3.png" class="slide">
-  </div>
-
-  <!-- arrows -->
-  <div class="arrow prev">&#10094;</div>
-  <div class="arrow next">&#10095;</div>
-</div>
-
-<!-- pagination -->
-<div class="pagination"></div>
-
-
-
-
-
-
-
-
-
-<section class="insurance-types">
-  <p class="title">What type of insurance are you interested in?</p>
-
-  <div class="icons-row">
-
-    <div class="item">
-      <i class="fa-solid fa-plane"></i>
-      <span>Travel</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-car"></i>
-      <span>Motor</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-users"></i>
-      <span>Life</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-briefcase"></i>
-      <span>Business</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-chart-line"></i>
-      <span>Investment</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <span>Education</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-house"></i>
-      <span>Property</span>
-    </div>
-
-    <div class="item">
-      <i class="fa-solid fa-ellipsis"></i>
-      <span>More</span>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-  <section class="about-section">
-    <div class="about-container" data-aos="fade-up">
-
-      <!-- LEFT SIDE -->
-      <div class="about-left">
-        <small class="company-label">BCM Insurance Limited</small>
-
-        <h2> B.C
-Madiebo & Company Insurance Brokers Limited.</h2>
-
-        <p style="font-size: 13px; text-align: justify;">
-          BCM is the leading Insurance and reinsurance broking firm in Nigeria.
-          For over 4 decades, we have consistently differentiated ourselves from
-          other insurance brokers in Nigeria by offering unprecedented services
-          to our clients, leveraging on our experience, professionalism, and
-          innovation.
-        </p>
-
-        <p style="font-size: 13px; text-align: justify;">
-         With almost 60 years of being in business comes ample experience and with it comes knowledge. Whilst we have grown to understand the science of insurance, we have also learnt that people and not science are the reason that our business has continued to thrive. 
-        </p>
-
-        <p style="font-size: 13px; text-align: justify;">
-      This is why our customers are very important to us. Our customers are the core of our business and providing them with excellent services that meet their insurance needs and exceed their highest expectations is the basis of our business and the reason we remain first choice in minds of our customers.
-        </p>
-      </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="about-right">
-
-        <!-- VISION -->
-        <div class="mv-item">
-          <button class="mv-header">
-            <span>Our Vision</span>
-            <span class="mv-icon">+</span>
-          </button>
-
-          <div class="mv-content">
-            <ul class="custom-list">
-  <li>To advise our clients of the various classes of insurance they may need based on their business, profession or lifestyle.</li>
-  <li>To negotiate the most competitive rates amongst first class underwriters on behalf of our existing/prospective clients.</li>
-  <li>To report, process, monitor and receive settlement checks on behalf of our clients in the event of a claim.</li>
-  <li>To monitor our clients insurance records in order to ensure that they are up to date and in line with the insurance industry standards.</li>
-  <li>To arrange or provide Insurance training for interested clients.</li>
-</ul>
-<p style="color: blue;">All of these and many other services we provide free.</p>
-          </div>
-        </div>
-
-        <!-- MISSION -->
-        <div class="mv-item">
-          <button class="mv-header">
-            <span>Our Mission</span>
-            <span class="mv-icon">+</span>
-          </button>
-
-          <div class="mv-content">
-            <div class="mv-content">
-            <ul class="custom-list">
-  <li>To continue to build our business on trust and sustain our reputation on integrity.</li>
-
-  <li>To ensure that customer satisfaction remains the secret of our success.</li>
-
-  <li>To remain first choice for Insurance Brokerage Services in the minds of the public.</li>
-
-  <li>To share in the vision of our customers success.</li>
-  <li>To grow with our customers.</li>
-</ul><br>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="stats-section">
-  <div class="stats-grid">
-
-    <!-- CARD 1 -->
-    <div class="stat-card" data-aos="fade-right">
-      <div class="stat-number" data-target="9600">0</div>
-      <div class="stat-title"><span class="highlight">Policies Issued</span></div>
-      <div class="stat-text">
-        Providing reliable coverage to safeguard what matters most.
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="stat-card" data-aos="zoom-in">
-      <div class="stat-number" data-target="65">0</div>
-      <div class="stat-title"><span class="highlight">Years in Business</span></div>
-      <div class="stat-text">
-        Protecting Nigerians for over 65 years.
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="stat-card" data-aos="fade-left">
-      <div class="stat-number" data-target="99">0</div>
-      <div class="stat-title"><span class="highlight">Claim Settlement Rate</span></div>
-      <div class="stat-text">
-        Ensuring satisfaction with every client, by trusted solutions.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<section class="insurance-section">
-  <h2 class="insurance-title">
-    Insurance Products
-    <span></span>
-  </h2>
-
-  <div class="insurance-lists">
-
-    <ul>
-      <li>Individual Life</li>
-      <li>Group Life</li>
-      <li>Health</li>
-      <li>Annuities</li>
-      <li>Fire/Special Perils</li>
-      <li>Property Damage</li>
-      <li>Business Interruption</li>
-      <li>Burglary</li>
-      <li>Fidelity/Forged Transfer</li>
-      <li>Goods In Transit</li>
-      <li>Householder’s Comprehensive</li>
-      <li>Money</li>
-      <li>Personal Accident</li>
-      <li>Group Personal Accident</li>
-    </ul>
-
-    <ul>
-      <li>Public Liability</li>
-      <li>Occupiers Liability</li>
-      <li>Products Liability</li>
-      <li>Professional Indemnity</li>
-      <li>Directors & Officers Liability</li>
-      <li>Motor Vehicle Insurance</li>
-      <li>Marine Insurance</li>
-      <li>Aviation Insurance</li>
-      <li>Oil & Gas Insurance</li>
-      <li>Advance Loss of Profit</li>
-      <li>Computer All Risks</li>
-      <li>Contractors All Risks</li>
-      <li>Builders Liability</li>
-    </ul>
-
-    <ul>
-      <li>Electronic Equipment</li>
-      <li>Erection All Risks</li>
-      <li>Machinery Breakdown</li>
-      <li>Plant All Risks</li>
-      <li>Kidnap & Ransom</li>
-      <li>Terrorism</li>
-      <li>All Risk</li>
-      <li>Agricultural Insurance</li>
-      <li>Insurance Bond</li>
-    </ul>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="footer">
-  <div class="footer-overlay">
-    <div class="footer-container">
-
-      <!-- LEFT -->
-      <div class="footer-left">
-        <img src="Logo1.png" alt="BCM Logo" class="footer-logo">
-
-        <p class="footer-text">
-        Because your peace of mind comes first, we are determined to put you at the forefront of our business, committed to giving you 100% commitment, and dedicated to striving for excellence so that we can provide you with Insurance services that will not only meet your needs but also exceed your highest expectations </p>
-
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/bc_madieboinsurancebroker?igsh=c2ZmeTYzdGxreHc5"><i class="fa-brands fa-instagram"></i></a>
-         
-        </div>
-      </div>
-
-      <!-- COMPANY -->
-      <div class="footer-column">
-        <h4 style="font-size: xx-large;">Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Advertise on Wetinuneed</a></li>
-          <li><a href="#">Create a directory listing</a></li>
-          <li><a href="#">Sell on Wetinuneed</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <!-- QUICK LINKS -->
-      <div class="footer-column">
-        <h4 style="font-size: xx-large;">Quick Links</h4>
-        <ul>
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Customer Service</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Your Account</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</footer>
-
-
-
-
-
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const menuButton = document.getElementById('elephant-menuButton');
-    const navList = document.querySelector('.elephant-nav-list');
-
-    function checkScreen() {
-        if (window.innerWidth <= 800) {
-            navList.style.display = 'none';
-        } else {
-            navList.style.display = 'flex';
-            navList.style.flexDirection = 'row';
-        }
+    .mv-item {
+    
+      border: 1px solid #e5e5e5;
+      margin-bottom: 15px;
+      background: #fff;
     }
 
-    checkScreen(); // Run on page load
+    .mv-header {
+      width: 100%;
+      padding: 18px 20px;
+      background: #ffffff;
+      color: blue;
+      border: none;
+      font-size: 13px;
+      font-weight: 630;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
 
-    menuButton.addEventListener('click', function() {
-        if (navList.style.display === 'flex') {
-            navList.style.display = 'none';
-        } else {
-            navList.style.display = 'flex';
-            navList.style.flexDirection = 'column';
-        }
-    });
+    .mv-header:hover {
+      background: #f7f7f7;
+    }
 
-    window.addEventListener('resize', checkScreen);
-});
-</script>
+    .mv-icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .mv-content {
+      overflow-y: auto;
+      text-align: justify;
+      max-height: 0px;
+      overflow-y: auto; 
+      transition: max-height 0.35s ease;
+      padding: 0 20px;
+    }
+
+    .mv-content p {
+      margin: 15px 0 20px;
+      font-size: 12px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* ACTIVE STATE */
+    .mv-item.active .mv-content {
+      max-height: 300px;
+    }
+
+    .mv-item.active .mv-icon {
+      transform: rotate(45deg);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .about-container {
+           padding-left: 15px;
+    padding-right: 15px;
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    
+
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 11px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .item i {
+    font-size: 18px !important; /* smaller size on mobile */
+  }
+}
 
 
 
 
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-<script>
+
+
+
+
+
+
+
+
+
+
+.footer-logo {
+  width: 240px;
+  height: 200px;
+  object-fit: contain; /* keeps logo from stretching */
+ 
+}
+
+@media (max-width: 600px) {
+  .footer-logo {
+
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+  /* Section wrapper */
+  .stats-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+   
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+   
+ 
+  }
+
+  /* Card */
+  .stat-card {
+    background: whitesmoke;
+    border-radius: 30px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 30px rgba(208, 45, 45, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .stat-card:hover,
+  .stat-card:active {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 45px rgb(240, 60, 30);
+  }
+
+  /* Number */
+  .stat-number {
+    font-size: 54px;
+    font-weight: 400px;
+    color: #8b0000; /* deep red */
+    margin-bottom: 10px;
+  }
+
+  /* Title */
+  .stat-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 10px;
+  }
+
+  /* Description */
+  .stat-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Highlight selection look (like your image) */
+  .highlight {
+    background: #1e73ff;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why-wrapper {
+  background: #fff;
+  margin-top: 10px;
+}
+.why-banner {
+  position: relative;
+  height: 330px;
+  object-fit: contain;
+  overflow: hidden;
+ 
+}
+
+.why-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    filter: brightness(0.85);
+    transition: transform 0.8s ease;
+  transform: scale(1);
+}
+
+/* WHITESMOKE OVERLAY */
+.why-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(245, 245, 245, 0.65); /* whitesmoke overlay */
+  z-index: 1;
+}
+
+
+
+/* HOVER EFFECT */
+.why-banner:hover img {
+  transform: scale(1.08) translateY(-10px);
+}
+
+
+
+/* TEXT CONTAINER */
+.banner-content {
+  font-weight: 900;  
+  position: absolute;
+  top: 50%;
+  left: 40px;              /* LEFT side */
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 500px;
+}
+
+/* H1 */
+.banner-content h1 {
+  font-size: 31px;
+font-weight: 900;   
+  font-family: 'Cormorant', serif;
+  font-style: bold;
+  justify-content: left;
+  position: relative;
+  padding-bottom: 20px; /* space for underline */
+  color: blue;
+  line-height: 1.1;
+}
+
+
+.banner-content h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 140px;          /* underline width */
+  height: 3px;         /* underline height */
+  background-color: red;
+}
+
+
+@media (max-width: 600px) {
+  .banner-content h1::after {
+    width: 80px;   /* reduced underline width */
+    height: 2px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .banner-content h1 {
+    font-size: 22px;
+  }
+}
+/* SUBTITLE */
+.banner-content p {
+   font-family: 'Cormorant', serif;
+  font-size: 15px;
+  color: red;
+  margin: 0;
+}
+
+
+
+
+
+
+
+.why-content {
+  text-align: center;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+.why-subtitle {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.why-title {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 80px;
+}
+
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.why-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #0a1f44;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.why-text {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6b8bbd;
+}
+
+
+
+@media (max-width: 700px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-item {
+    justify-content: center;
+  }
+
+  .why-banner {
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .carousel {
+    height: 313px !important;
+  }
+
+  .slide {
+    object-fit: contain;    /* show full image, no cropping */
+    background: #fff;       /* optional: avoids ugly gaps */
+  }
+}
+
+
+
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* slides */
+.slides {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* IMPORTANT: no zoom */
+  
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: red;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* star pagination */
+.page-dot {
+  width: 18px;
+  height: 18px;
+  background: blue;
+  cursor: pointer;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+/* active star */
+.page-dot.active {
+  background: red;
+}
+
+/* fallback (if clip-path unsupported) */
+@supports not (clip-path: polygon(50% 0%, 61% 35%)) {
+  .page-dot {
+    border-radius: 50%;
+  }
+}
+
+
+
+.social-wrapper {
+    text-align: right;       /* Align everything inside to the right */
+    padding-right: 20px;     /* Space from the edge of the page */
+padding-bottom: 0px;
+background-color: whitesmoke;
+
+}
+
+.social-container {
+    display: inline-flex;    /* Keep icons in a row */
+    gap: 12px;               /* Space between icons */
+}
+
+.social-container a {
+
+    font-size: 27px;
+    text-decoration: none;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  color: black;
+      line-height: 1.5; 
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  }
+  
+  
+  
+  .kala { color: #B8705D; }
+  
+  @media (max-width: 800px) {
+  .eze {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+    padding: 12px;
+  }
+  }
+  
+  
+  @media (max-width: 800px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden; 
+      }
+  }
   
 
 
-  $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                items: 1, // Show one item at a time
-                loop: true,
-                margin: 10,
-                nav: true,
-                autoplay: true, // Enable auto-play
-                autoplayTimeout: 3000, // Change every 3 seconds
-                autoplayHoverPause: true // Pause on hover
-            });
-        });
 
-
-</script>
-
-
-
-<script>
-  const counters = document.querySelectorAll('.stat-number');
-  let started = false;
-
-  function startCounting() {
-    if (started) return;
-    started = true;
-
-    counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      const isPercent = counter.textContent.includes('%') || target <= 100;
-      const duration = 2000;
-      const startTime = performance.now();
-
-      function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const value = Math.floor(progress * target);
-
-        counter.textContent = value.toLocaleString() + (counter === counters[2] ? '%' : '+');
-
-        if (progress < 1) {
-          requestAnimationFrame(update);
+  
+  h1 {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  }
+  
+  
+  @media (max-width: 800px) {
+    h1 {
+        font-size: 22px; 
+        text-align: center; 
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .image {
+    box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  }
+  
+  @media (min-width: 1400px) {
+            .image {
+                width: 150px;
+                height: 150px; 
+            }
         }
-      }
+  
+  
+  
+  
+  
+  .container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  }
+  
+  .blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(3px); /* Adjust the blur amount as needed */
+  }
+  
+  .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  backdrop-filter: blur(1px); /* Adjust the overlay blur amount as needed */
+  }
+  
+  
+  
+  .container-fluid {
+  background-size: cover;
+  position: relative;
+  }
+  
+  .flex-item {
+  padding: 20px;
+  flex: 0 0 33%;
+  height: 100px;
+  box-sizing: border-box;
+  }
+  
+  .custom-container {
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  z-index: 0;
+    position: relative;
+    overflow: hidden; 
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV1dW5zOWdjZTJ3NnF5eHYxdGRzdjQybGo4cXR6NXUyajlxaHJqZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f94coCqt6CgXMJs2FR/giphy.webp'); 
+    background-size: cover; 
+    border-top: 35px; 
+  }
+  
+  .container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D6A295;
+  opacity: 0.5;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        .custom-list {
+          
+  color: black;
+            list-style-type: none; 
+            padding: 0; 
+        }
+  
+        .custom-list li {
+            padding-top: 19px;
+        }
+  .custom-list li a {
+            text-decoration: none;
+            font-size: large; 
+            color: black;
+            transition: color 0.3s ease;
+        }
+  
+       
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .asake {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .left-panel {
+       text-align: justify;
+  justify-content: center;
+    align-items: center;
+  flex: 0 0 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  
+  .right-panel {
+    padding: 20px;
+       text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+        line-height: 1.5; 
+  
+  z-index: 50;
+  flex: 1; 
+  padding: 0px 20px 20px 10px;
+  box-sizing: border-box;
+  }
+  
+  
+  
+  @media (max-width: 800px) {
+  .asake {
+    
+    padding-left: 15px;
+    padding-right: 15px;
+  
+      flex-direction: column; /* Stack items vertically */
+  }
+  .left-panel {
+    padding: 20px;
+      width: 100%; /* Each panel takes full width */
+  }
+  .right-panel {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+  }
+  }
+  
+  
+  .card {
+    
+  width: 310px;
+  height: 250px;
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  overflow: hidden;
+  border-radius: 20px;
+  }
+  
+  .card img {
+  width: 310px;
+  
+  height: 250px;
+  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
+  
+  border-radius: 20px;
+  }
+  
+  @media (max-width: 800px) {
+  .card img {
+    object-fit: cover;
+    
+    width: 275px;
+      height: 200px;
+  }
+  .card {
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+     height: 200px;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 800px) {
+  .new-flex-container {
+    flex-direction: column;
+  }
+  }
+  
+  
+  .new-custom-container {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  height: 100%; 
+  }
+  
+  .new-container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  lightgray;
+  z-index: 1;
+ border-radius: 45px 45px 0 0;
+ 
+  }
+  
+  
+  
+  .new-flex-container {
+    color: white;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 800px) {
+  .new-flex-container {
+    flex-direction: column;
+  }
+  }
+  
 
-      requestAnimationFrame(update);
-    });
+  
+  
+  
+  
+  
+  body {
+  background: #f6efe9; /* soft beige like your screenshot */
+}
+
+.insurance-types {
+  padding: 0px;
+  text-align: center;
+}
+
+.insurance-types .title {
+  font-size: 17px;
+  color: #092A95;
+  margin-bottom: 30px;
+  letter-spacing: 0.3px;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  color: blue;
+  flex-wrap: wrap;
+}
+
+.icons-row .item i {
+  color: #092A95; /* insurance-style blue */
+  font-size: 32px; /* adjust if needed */
+}
+
+.item {
+  color: blue;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.item span {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* subtle hover like modern insurance sites */
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.item:hover span {
+  color: #000;
+}
+
+
+.item i {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 12px;
+}
+  
+/* When screen width is below 800px */
+@media (max-width: 800px) {
+  .item i {
+    font-size: 20px;
+  }
+}
+  
+  /* smooth transition */
+.item i,
+.item span {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* hover (desktop) */
+.item:hover i,
+.item:hover span {
+  color: #d62828; /* red */
+  transform: scale(1.1);
+}
+
+/* active / tap (touch screens) */
+.item:active i,
+.item:active span {
+  color: #d62828;
+  transform: scale(1.1);
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .insurance-section {
+  padding: 0px 40px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insurance-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.insurance-title span {
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #4a7dbd;
+  margin: 12px auto 0;
+}
+
+/* LIST LAYOUT */
+.insurance-lists {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.insurance-lists ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.insurance-lists li {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+/* RED HOVER */
+.insurance-lists li:hover {
+  color: #ff0000;
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .custom-list {
+  list-style: none;       /* remove default bullets */
+  padding: 0;
+  color: blue;
+  margin: 0;
+  font-size: 12px;
+}
+
+.custom-list li {
+  display: flex;          /* make arrow inline with text */
+  align-items: flex-start;
+  gap: 6px;               /* space between arrow and text */
+   /* space between list items */
+}
+
+.custom-list li::before {
+  content: "→";           /* arrow icon */
+  font-size: 12px;        /* controls arrow size */
+  font-weight: bold;      /* optional bold arrow */
+  color: red;            /* arrow color */
+  line-height: 1.2;       /* align arrow with text */
+}
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+ 
+  
+  
+  /* Navbar link color */
+.elephant-nav-list a span {
+   
+    color: blue !important;  /* Set your blue color */
+    font-weight: bold;
+}
+
+  
+  .elephant-navbar {
+    z-index: 999;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 21px;
+    padding-left: 15px;
+    background-color: #fff;
+  }
+  .elephant-nav-list {
+    z-index: 999;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+
+  }
+  .elephant-nav-list li {
+    display: inline;
+  }
+  .elephant-nav-list a {
+    text-decoration: none;
+    color: #092A95;
+    line-height: 10px;
+    
+    position: relative; /* Added position relative for hover effect */
+  }
+  .elephant-nav-list a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FF0000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out;
+  }
+  .elephant-nav-list a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+ .elephant-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+  /* Mobile dropdown toggle */
+.elephant-dropdown-content.show {
+  display: block !important;
+}
+
+
+.elephant-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  right: 0;
+  top: 40px;
+  z-index: 999;
+}
+
+
+
+  
+  
+  
+  @media screen and (max-width: 800px) {
+   .elephant-menu-button {
+    font-size: 30px;
+      padding-right:0px;
+     }
+  }
+  
+  
+  .elephant-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #092A95;
+    cursor: pointer;
+  }
+  @media (max-width: 800px) {
+    .elephant-nav-list {
+      z-index: 999;
+      display: none;
+ 
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 105px; /* Adjust according to your navbar height */
+      right: 10px;
+     
+
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(54, 36, 36, 0.2);
+      height: auto;
+    }
+    .elephant-nav-list.show {
+      display: flex;
+    }
+    .elephant-menu-button {
+      display: block;
+    
+    }
+  }
+  .elephant-navbar img {
+    max-width: 220px;
+    max-height: 130px;
   }
 
-  /* Trigger when visible */
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        startCounting();
-      }
-    });
-  }, { threshold: 0.4 });
+  
+ 
+  .elephant-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
 
-  observer.observe(document.querySelector('.stats-section'));
-</script>
+  
+  
+ 
+/* Official brand colors */
+.social-container a.facebook {
+    color: #1877F2;  /* Facebook blue */
+}
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,   // animation duration
-    once: false,     // animate every time element is in view
-     mirror: true 
-  });
-</script>
+.social-container a.twitter {
+    color: #1DA1F2 ;  /* Twitter blue */
+}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-xxxxxx" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+.social-container a.instagram {
+    color: #C13584;  /* Instagram primary pink/magenta color */
+}
+  
+  
+  
+  
+  @media screen and (max-width: 800px) {
+    .elephant-navbar img {
+      max-width: 170px;
+    
+      max-height: 115px;
+    }
+  }
 
 
-<script>
-  AOS.init();
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ /* Hover effect */
+.mv-header:hover {
+  color: red;
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.6);
+}
 
-<script src="script.js"></script>
-</body>
-
-</html>
+/* Make the + icon also turn red */
+.mv-header:hover .mv-icon {
+  color: red;
+}
