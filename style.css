@@ -863,36 +863,6 @@ background-color: whitesmoke;
   
   
   
-.gsc {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  .gsc-left {
-    gap: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex: 50%;
-    text-align: justify;
-    font-family: Helvetica;
-    font-size: 14px;
-  }
-  
-  .gsc-right {
-    padding: 10px;
-    flex: 50%;
-  }
-  
-  /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 800px) {
-    .gsc {
-      flex-direction: column;
-    }
-  }
-  
-  
   
   
   
@@ -944,64 +914,7 @@ background-color: whitesmoke;
   }
   }
   
-  
-  
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  .address {
-  display: flex;
-  align-items: center;
-  }
-  .azonto {
-  text-align: center;
-  }
-  
-  
-  .w3-third { text-align: center;
-    font-style: bold;}
-    
-  
-  
-  
-  
-  
-  
-    
-  
-    
-  
-  
-  
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
@@ -1248,7 +1161,7 @@ background-color: whitesmoke;
     z-index: 999;
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 35px;
 
   }
   .elephant-nav-list li {
