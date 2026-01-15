@@ -440,7 +440,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 400px;
   background: #fff;
   overflow: hidden;
   margin-top: 10px;
@@ -1435,4 +1435,5 @@ background-color: whitesmoke;
 .mv-header:hover .mv-icon {
   color: red;
 }
+
 
