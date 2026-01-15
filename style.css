@@ -517,6 +517,7 @@ font-weight: 900;
 @media (max-width: 600px) {
   .banner-content h1 {
     font-size: 16px;
+     font-family: 'Cormorant', serif;
   }
 }
 /* SUBTITLE */
