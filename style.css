@@ -437,9 +437,9 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .carousel {
-    height: 273px !important;
+    height: 303px !important;
   }
 
   .slide {
