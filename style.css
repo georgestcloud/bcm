@@ -424,7 +424,7 @@
 
 @media (max-width: 700px) {
   .carousel {
-    height: 220px !important;
+    height: 280px !important;
   }
 
   .slide {
@@ -440,7 +440,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 450px;
   background: #fff;
   overflow: hidden;
   margin-top: 10px;
@@ -1435,3 +1435,4 @@ background-color: whitesmoke;
 .mv-header:hover .mv-icon {
   color: red;
 }
+
