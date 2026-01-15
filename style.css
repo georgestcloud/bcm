@@ -234,6 +234,7 @@
     
 
     .mv-item {
+    
       border: 1px solid #e5e5e5;
       margin-bottom: 15px;
       background: #fff;
@@ -1389,6 +1390,7 @@ background-color: whitesmoke;
  /* Hover effect */
 .mv-header:hover {
   color: red;
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.6);
 }
 
 /* Make the + icon also turn red */
