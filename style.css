@@ -614,8 +614,6 @@ font-weight: 900;
 
 
 
-
-
 @media (max-width: 600px) {
   .carousel {
     height: 313px !important;
@@ -634,7 +632,7 @@ font-weight: 900;
 .carousel {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 410px;
   background: #fff;
   overflow: hidden;
   margin-top: 10px;
