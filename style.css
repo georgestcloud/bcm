@@ -1339,17 +1339,18 @@ background-color: whitesmoke;
 }
 
 .sectors-left small {
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.9;
 }
 
 .sectors-left h2 {
-  font-size: 32px;
-  margin: 10px 0 20px;
+  font-size: 25px;
+  margin: 10px 0 10px;
+  color: #102635;
 }
 
 .sectors-left p {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.7;
   margin-bottom: 30px;
 }
@@ -1360,8 +1361,8 @@ background-color: whitesmoke;
 }
 
 .sectors-right h3 {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .sector-list {
@@ -1375,6 +1376,7 @@ background-color: whitesmoke;
 }
 
 .sector-list li {
+  font-size: 13px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1396,8 +1398,8 @@ background-color: whitesmoke;
   border-radius:20px;
   display: inline-block;
   padding: 12px 28px;
-  font-size: 17px;
-  background: #2f5d7c;
+  font-size: 15px;
+  background: #102635;
   color: #fff;
   text-decoration: none;
   margin-top: 30px;
