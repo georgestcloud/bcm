@@ -1,5 +1,8 @@
 
 
+
+
+
 .footer {
   background-image: url("BCM.png"); /* YOUR IMAGE */
   background-size: cover;
@@ -7,6 +10,10 @@
   background-repeat: no-repeat;
   color: #fff;
   border-radius: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 /* Neutral fade so text is readable */
@@ -14,12 +21,14 @@
   background: rgba(0, 0, 0, 0.45); /* NOT yellow */
  padding: 0 40px;
   border-radius: 40px;
+  
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  gap: 80px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-left {
@@ -35,8 +44,7 @@
   text-align: justify;
   font-size: 13px;
 
- text-align: justify;
-  max-width: 420px;
+  max-width: 100%
 }
 
 /* SOCIAL ICONS */
@@ -80,30 +88,81 @@
 
 
 
+
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 30px 1fr; /* icon | text */
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.contact-icon {
+  font-size: 20px;
+  color: #102635;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+
+.contact-label {
+  font-weight: 700;
+  display: inline-block;
+}
+
+
+
+/* mobile */
+@media (max-width: 700px) {
+  .contact-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .contact-icon {
+    margin-bottom: 6px;
+  }
+}
+
+
+
+
+
+
 /* COLUMNS */
 .footer-column {
   flex: 1;
+  align-items: center;
 }
 
 .footer-column h4 {
-  font-size: 13px;
-  margin-top: 90px;
-  margin-bottom: 15px;
+text-align: center;
+  margin-bottom: 10px;
 }
 
 .footer-column ul {
+  text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 13px;
+
 }
 
 .footer-column li {
   margin-bottom: 10px;
-  font-size: 13px;
+ 
 }
 
 .footer-column a {
+
   color: #fff;
   text-decoration: none;
   font-size: 13px;
@@ -122,14 +181,17 @@
 
   .footer-text,
   .footer-column a {
-    text-align: justify;
+    text-align: center;
     font-size: 13px;
     align-items: center;
     justify-content: center;
   }
 
   .footer-column h4 {
+    text-align: center;
+    align-items: center;
     margin-top: 25px;
+    font-size: 24px;
   }
 }
 
@@ -204,6 +266,7 @@
 .sisi {
 
       font-size: 16px;
+      font-weight: 670;
       letter-spacing: 1.5px;
       color: blue;
       text-transform: uppercase;
@@ -278,7 +341,7 @@
      border: 1px red;
        border-radius: 8px; 
       font-size: 14px;
-      font-weight: 620;
+      font-weight: 600;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1265,7 +1328,8 @@ background-color: whitesmoke;
   text-align: center;
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 50px;
+margin-top: 30px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -1293,7 +1357,7 @@ background-color: whitesmoke;
 }
 
 .insurance-lists li {
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
   margin-bottom: 10px;
   cursor: pointer;
@@ -1345,6 +1409,7 @@ background-color: whitesmoke;
 
 .sectors-left h2 {
   font-size: 25px;
+  font-weight: 700;
   margin: 10px 0 10px;
   color: #102635;
 }
@@ -1464,14 +1529,14 @@ background-color: whitesmoke;
   
   
   
-  
-  
   .custom-list {
   list-style: none;       /* remove default bullets */
   padding: 0;
   color: blue;
   margin: 0;
-  font-size: 13px;
+  font-size: 13.5px;
+  font-weight: 400;
+  
 }
 
 .custom-list li {
@@ -1484,7 +1549,7 @@ background-color: whitesmoke;
 .custom-list li::before {
   content: "→";           /* arrow icon */
   font-size: 12px;        /* controls arrow size */
-  font-weight: bold;      /* optional bold arrow */
+  font-weight: bolder;      /* optional bold arrow */
   color: red;            /* arrow color */
   line-height: 1.2;       /* align arrow with text */
 }
