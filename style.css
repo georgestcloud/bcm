@@ -35,10 +35,6 @@
   flex: 1.5;
 }
 
-.footer-logo {
-  width: 190px;
- 
-}
 
 .footer-text {
   text-align: justify;
@@ -268,7 +264,7 @@ text-align: center;
       font-size: 16px;
       font-weight: 670;
       letter-spacing: 1.5px;
-      color: blue;
+      color: red;
       text-transform: uppercase;
 }
 
@@ -337,7 +333,7 @@ text-align: center;
       width: 100%;
       padding: 9px 14px;
       background: #ffffff;
-      color: blue;
+      color: red;
      border: 1px red;
        border-radius: 8px; 
       font-size: 14px;
@@ -431,9 +427,10 @@ text-align: center;
 
 @media (max-width: 600px) {
   .footer-logo {
-
+object-fit: contain;
     width: 200px;
     height: 200px;
+
   }
 }
 
@@ -476,7 +473,7 @@ text-align: center;
   .stat-number {
     font-size: 54px;
     font-weight: 400px;
-    color: #8b0000; /* deep red */
+    color: red; /* deep red */
     margin-bottom: 10px;
   }
 
@@ -1411,7 +1408,7 @@ margin-top: 30px;
   font-size: 25px;
   font-weight: 700;
   margin: 10px 0 10px;
-  color: #102635;
+  color: red;
 }
 
 .sectors-left p {
@@ -1464,7 +1461,7 @@ margin-top: 30px;
   display: inline-block;
   padding: 12px 28px;
   font-size: 15px;
-  background: #102635;
+  background: firebrick;
   color: #fff;
   text-decoration: none;
   margin-top: 30px;
@@ -1474,13 +1471,13 @@ margin-top: 30px;
 .btn-primary:hover,
 .btn-primary:focus {
   transform: scale(1.08); /* zoom in */
-  box-shadow: 0 10px 25px rgba(239, 36, 36, 0.6);}
+  box-shadow: 0 13px 23px #102635;}
 
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   transform: scale(1.08); /* zoom in */
-  box-shadow: 0 10px 25px rgba(239, 36, 36, 0.6); /* red shadow */
+  box-shadow: 0 13px 23px #102635; /* red shadow */
 }
 
 /* RESPONSIVE: BELOW 600PX */
