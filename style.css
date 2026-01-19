@@ -3,6 +3,7 @@
 
 
 
+
 .footer {
   background-image: url("BCM.png"); /* YOUR IMAGE */
   background-size: cover;
@@ -242,16 +243,15 @@ text-align: center;
     .about-section {
       padding: 60px 20px;
       background: whitesmoke;
+        width: 100%;
     
     }
 
   .about-container {
-  max-width: 1200px;
   margin: 0 auto;          /* 👈 THIS centers the container */
 
   padding-left: 35px;
   padding-right: 35px;
-
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 20px;
@@ -379,7 +379,7 @@ text-align: center;
     }
 
     /* RESPONSIVE */
-    @media (max-width: 900px) {
+    @media (max-width: 700px) {
       .about-container {
            padding-left: 15px;
     padding-right: 15px;
@@ -437,7 +437,7 @@ object-fit: contain;
 
   /* Section wrapper */
   .stats-section {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
    
@@ -565,8 +565,8 @@ object-fit: contain;
 
 /* H1 */
 .banner-content h1 {
-  font-size: 31px;
-font-weight: 900;   
+  font-size: 28px;
+font-weight: 700;   
   font-family: 'Cormorant', serif;
   font-style: bold;
   justify-content: left;
@@ -820,6 +820,7 @@ background-color: whitesmoke;
 
   body {
     font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
   color: black;
       line-height: 1.5; 
   text-align: justify;
@@ -845,6 +846,7 @@ background-color: whitesmoke;
   body {
     font-size: 14px;
     overflow-x: hidden; 
+      margin: 0;
       }
   }
   
@@ -921,7 +923,11 @@ background-color: whitesmoke;
   }
   
   
-  
+  .full-width {
+  width: 100%;
+}
+
+
   .container-fluid {
   background-size: cover;
   position: relative;
@@ -1053,62 +1059,6 @@ background-color: whitesmoke;
   
   
   
-  @media (max-width: 800px) {
-  .asake {
-    
-    padding-left: 15px;
-    padding-right: 15px;
-  
-      flex-direction: column; /* Stack items vertically */
-  }
-  .left-panel {
-    padding: 20px;
-      width: 100%; /* Each panel takes full width */
-  }
-  .right-panel {
-    width: 100%;
-    padding: 20px 20px 20px 20px;
-  }
-  }
-  
-  
-  .card {
-    
-  width: 310px;
-  height: 250px;
-  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
-  
-  overflow: hidden;
-  border-radius: 20px;
-  }
-  
-  .card img {
-  width: 310px;
-  
-  height: 250px;
-  box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
-  
-  border-radius: 20px;
-  }
-  
-  @media (max-width: 800px) {
-  .card img {
-    object-fit: cover;
-    
-    width: 275px;
-      height: 200px;
-  }
-  .card {
-    
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 275px;
-     height: 200px;
-    }
-  
-  }
   
   
   
@@ -1129,52 +1079,15 @@ background-color: whitesmoke;
   
   
   
-  @media (max-width: 800px) {
-  .new-flex-container {
-    flex-direction: column;
-  }
-  }
-  
-  
-  .new-custom-container {
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  height: 100%; 
-  }
-  
-  .new-container-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color:  lightgray;
-  z-index: 1;
- border-radius: 45px 45px 0 0;
- 
-  }
-  
-  
-  
-  .new-flex-container {
-    color: white;
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: row;
-  }
   
   
   
   
   
   
-  @media (max-width: 800px) {
-  .new-flex-container {
-    flex-direction: column;
-  }
-  }
+  
+
+  
   
 
   
@@ -1182,9 +1095,7 @@ background-color: whitesmoke;
   
   
   
-  body {
-  background: #f6efe9; /* soft beige like your screenshot */
-}
+
 
 .insurance-types {
   padding: 0px;
