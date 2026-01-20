@@ -1527,7 +1527,7 @@ margin-top: 30px;
       
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
-      gap: 40px;
+      gap: 20px;
       align-items: center;
     }
 
