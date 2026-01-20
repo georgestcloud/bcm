@@ -3,7 +3,6 @@
 
 
 
-
 .footer {
   background-image: url("BCM.png"); /* YOUR IMAGE */
   background-size: cover;
@@ -306,7 +305,7 @@ text-align: center;
     .about-right {
       width: 100%;
       
-      margin-top: 120px;
+      margin-top: 50px;
     
     }
 
@@ -506,13 +505,6 @@ object-fit: contain;
 
 
 
-
-
-
-
-
-
-
 .why-wrapper {
   background: #fff;
   margin-top: 10px;
@@ -567,7 +559,7 @@ object-fit: contain;
 .banner-content h1 {
   font-size: 28px;
 font-weight: 700;   
-  font-family: 'Cormorant', serif;
+  font-family: "Georgia", "Times New Roman", serif ;
   font-style: bold;
   justify-content: left;
   position: relative;
@@ -599,7 +591,7 @@ font-weight: 700;
 @media (max-width: 600px) {
   .banner-content h1 {
     font-size: 16px;
-     font-family: 'Cormorant', serif;
+  font-family: "Georgia", "Times New Roman", serif;
   }
 }
 /* SUBTITLE */
@@ -815,6 +807,9 @@ background-color: whitesmoke;
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", "Times New Roman", serif;
   }
 
 
@@ -824,7 +819,7 @@ background-color: whitesmoke;
   color: black;
       line-height: 1.5; 
   text-align: justify;
-  font-size: 14px;
+
   font-weight: 400;
   }
   
@@ -991,20 +986,6 @@ background-color: whitesmoke;
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   .asake {
     display: flex;
     justify-content: space-between;
@@ -1013,22 +994,6 @@ background-color: whitesmoke;
     box-sizing: border-box;
     flex-direction: row;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -1057,39 +1022,6 @@ background-color: whitesmoke;
   box-sizing: border-box;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-
   
   
   
@@ -1189,39 +1121,8 @@ background-color: whitesmoke;
 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
   
   
   .insurance-section {
@@ -1411,30 +1312,7 @@ margin-top: 30px;
   }
 }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   .custom-list {
@@ -1463,28 +1341,6 @@ margin-top: 30px;
 }
 
   
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
-  
- 
   
   
   /* Navbar link color */
@@ -1659,3 +1515,16 @@ margin-top: 30px;
 .mv-header:hover .mv-icon {
   color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
