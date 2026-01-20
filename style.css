@@ -1521,15 +1521,13 @@ margin-top: 30px;
 
 
 .vegetable-basket {
-  justify-content: center;
-  text-align: center;
-   width: auto;
+      max-width: 1200px;
      margin-right: 25px;
         margin-left: 25px;
       
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
-      gap: 17px;
+      gap: 20px;
       align-items: center;
     }
 
