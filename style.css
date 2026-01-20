@@ -1528,3 +1528,148 @@ margin-top: 30px;
 
 
 
+.vegetable-basket {
+      max-width: 1200px;
+     margin-right: 25px;
+        margin-left: 25px;
+      
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* LEFT CONTENT */
+    .carrot-text small {
+      color: var(--accent);
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-bottom: 10px;
+    margin-top: 10px;
+    font-style: bold;
+    font-weight: 500;
+    }
+
+    .carrot-text h1 {
+      font-size: 48px;
+      color: red;
+      font-weight: 500pt;
+      margin-bottom: 24px;
+    }
+
+    .carrot-text p {
+      text-align: justify;
+      font-size: 15px;
+      line-height: 1.8;
+      color: blue;
+      margin-bottom: 20px;
+      max-width: 520px;
+    }
+
+    /* RIGHT IMAGE */
+    .lettuce-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 700px) {
+ .tomato-image {
+    margin-top: 0 !important;
+  }
+} 
+
+    .tomato-image {
+      width: 100%;
+      margin-top: 100px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 45px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .vegetable-basket {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        
+      }
+
+      .lettuce-wrapper {
+        height: 400px;
+      
+      }
+    }
+
+    @media (max-width: 600px) {
+      .vegetable-basket {
+        padding: 60px 16px;
+        margin-right: 25px;
+        margin-left: 25px;
+      }
+
+      .carrot-text h1 {
+        font-size: 25px !important;
+      }
+
+      .lettuce-wrapper {
+        height: 380px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
