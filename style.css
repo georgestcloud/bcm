@@ -511,7 +511,7 @@ object-fit: contain;
 }
 .why-banner {
   position: relative;
-  height: 330px;
+  height: 350px;
   object-fit: contain;
   overflow: hidden;
  
@@ -674,7 +674,7 @@ font-weight: 700;
   }
 
   .why-banner {
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -1555,7 +1555,7 @@ margin-top: 30px;
       font-size: 48px;
       color: red;
       font-weight: 500pt;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .carrot-text p {
@@ -1604,9 +1604,9 @@ margin-top: 30px;
 
     @media (max-width: 600px) {
       .vegetable-basket {
-        padding: 60px 16px;
-        margin-right: 25px;
-        margin-left: 25px;
+        padding: 30px 16px;
+        margin-right: 18px;
+        margin-left: 18px;
       }
 
       .carrot-text h1 {
