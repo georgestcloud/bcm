@@ -1520,14 +1520,6 @@ margin-top: 30px;
 
 
 
-
-
-
-
-
-
-
-
 .vegetable-basket {
       max-width: 1200px;
      margin-right: 25px;
@@ -1673,3 +1665,246 @@ margin-top: 30px;
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .strengths {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 55px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .strengths {
+    padding-top: 15px !important;
+  }
+}
+
+.strengths small {color: red;
+}
+
+.strengths h2 {
+  color: blue;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* GRID */
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.strength-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 90, 255, 0.15);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+    transition: height 0.3s ease;
+}
+
+/* ICON */
+.icon {
+  font-size: 28px;
+  color: #005aff;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+  max-height: 60px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/* EXPANDED TEXT */
+.text.expanded {
+  max-height: 410px;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+  text.expanded {
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* READ MORE */
+.read-more {
+  margin-top: auto;
+  background: none;
+  border: none;
+  color: #005aff;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+.strength-card.expanded {
+  height: 330px; /* controlled increase */
+}
