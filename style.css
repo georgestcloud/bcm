@@ -1804,29 +1804,31 @@ margin-top: 30px;
 
 
   .strengths {
-    align-items: center;
-    justify-content: center;
-    
-    padding-left: 50px;
-    padding-right: 20px;
-    padding-top: 55px;
-  max-width: 1200px;
-  margin: 0;
+  display: flex;            /* turn section into flex container */
+  flex-direction: column;   /* stack everything vertically */
+  align-items: center;      /* center everything horizontally */
+  text-align: center;       /* center all text */
+  padding: 50px 20px;       /* spacing from edges */
+  width: 100%;              /* stretch full width */
+  box-sizing: border-box;
 }
 
 @media (max-width: 700px) {
   .strengths {
-    padding-top: 15px !important;
+    padding-top: 1px !important;
+    align-content: center;
+    justify-content: center;
   }
 }
 
 .strengths small {color: red;
+  margin-bottom: 30px;
 }
 
 .strengths h2 {
   color: blue;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 32px;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -1834,6 +1836,8 @@ margin-top: 30px;
 
 /* GRID */
 .strengths-grid {
+  align-items: center;
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -1903,10 +1907,22 @@ margin-top: 30px;
   .strengths-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .strength-card .icon {
+  font-size: 30px !important;       /* keep your size */
+  margin-bottom: 20px;   /* spacing below icon */
+  color: red;            /* change icon color to red */
+}
 }
 
 
 
 .strength-card.expanded {
   height: 330px; /* controlled increase */
+}
+
+.strength-card .icon {
+  font-size: 48px;       /* keep your size */
+  margin-bottom: 20px;   /* spacing below icon */
+  color: red;            /* change icon color to red */
 }
