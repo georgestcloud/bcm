@@ -1525,8 +1525,7 @@ margin-top: 30px;
   margin: 0 auto;           
   padding: 40px 25px;             /* INNER SPACE so text doesn’t touch edges */
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 5px !important;                      /* CONSISTENT GAP */
+  grid-template-columns: 1.1fr 0.9fr;          
   align-items: center;
   box-sizing: border-box;
 }
@@ -1557,7 +1556,6 @@ margin-top: 30px;
     /* RIGHT IMAGE */
     .lettuce-wrapper {
      width: 100%;
-  padding: 0 20px;   /* ← THIS is your uniform spacing */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
