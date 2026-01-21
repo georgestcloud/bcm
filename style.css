@@ -1526,7 +1526,7 @@ margin-top: 30px;
   padding: 40px 25px;             /* INNER SPACE so text doesn’t touch edges */
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 5px;                      /* CONSISTENT GAP */
+  gap: 5px !important;                      /* CONSISTENT GAP */
   align-items: center;
   box-sizing: border-box;
 }
@@ -1544,6 +1544,8 @@ margin-top: 30px;
     }
 
     .carrot-text p {
+      text-align: center;
+      align-content: center;
       text-align: justify;
       font-size: 15px;
       line-height: 1.8;
