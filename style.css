@@ -1530,6 +1530,12 @@ margin-top: 30px;
   box-sizing: border-box;
 }
 
+.carrot-text {align-items: center;
+justify-content: center;
+align-content: center;}
+
+
+
     /* LEFT CONTENT */
     .carrot-text small {
       color: var(--accent);
