@@ -1519,17 +1519,17 @@ margin-top: 30px;
 
 
 
-
 .vegetable-basket {
-      max-width: 1200px;
-     margin-right: 25px;
-        margin-left: 25px;
-      justify-content: center;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 20px;
-      align-items: center;
-    }
+  max-width: 1200px;
+  background-color: whitesmoke;
+  margin: 0 auto;                 /* CENTER THE ENTIRE SECTION */
+  padding: 40px 25px;             /* INNER SPACE so text doesn’t touch edges */
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5px;                      /* CONSISTENT GAP */
+  align-items: center;
+  box-sizing: border-box;
+}
 
     /* LEFT CONTENT */
     .carrot-text small {
@@ -1563,51 +1563,46 @@ margin-top: 30px;
     .lettuce-wrapper {
       position: relative;
       width: 100%;
-      height: 100%;
+    
     }
 
-    @media (max-width: 700px) {
- .tomato-image {
-    margin-top: 0 !important;
+   @media (max-width: 992px) {
+  .vegetable-basket {
+    grid-template-columns: 1fr;
   }
-} 
+
+  .tomato-image {
+    margin-top: 0;
+  }
+
+  .lettuce-wrapper {
+    height: auto;
+  }
+}
+
 
     .tomato-image {
       width: 100%;
-      margin-top: 100px;
+  
       height: 280px;
       object-fit: cover;
       border-radius: 45px;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 992px) {
-      .vegetable-basket {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        
-      }
 
-      .lettuce-wrapper {
-        height: 400px;
-      
-      }
-    }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .vegetable-basket {
         padding: 30px 16px;
-        margin-right: 18px;
-        margin-left: 18px;
+          grid-template-columns: 1fr;
+      
       }
 
       .carrot-text h1 {
         font-size: 25px !important;
       }
 
-      .lettuce-wrapper {
-        height: 380px;
-      }
+      
     }
 
 
