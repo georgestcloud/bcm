@@ -1522,7 +1522,7 @@ margin-top: 30px;
 .vegetable-basket {
   max-width: 100%;
   background-color: whitesmoke;
-  margin: 0 auto;                 /* CENTER THE ENTIRE SECTION */
+  margin: 0 auto;           
   padding: 40px 25px;             /* INNER SPACE so text doesn’t touch edges */
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -1554,16 +1554,16 @@ margin-top: 30px;
 
     /* RIGHT IMAGE */
     .lettuce-wrapper {
-      position: relative;
-      width: auto;
+     width: 100%;
+  padding: 0 20px;   /* ← THIS is your uniform spacing */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
     
     }
 
    @media (max-width: 992px) {
-  .vegetable-basket {
-    grid-template-columns: 1fr;
-  }
-
+ 
   .tomato-image {
     margin-top: 0;
   }
@@ -1576,7 +1576,8 @@ margin-top: 30px;
 
     .tomato-image {
       width: 100%;
-  
+   max-width: 100%; 
+     display: block; 
       height: 280px;
       object-fit: cover;
       border-radius: 45px;
