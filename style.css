@@ -669,9 +669,7 @@ font-weight: 700;
     grid-template-columns: 1fr;
   }
 
-  .why-item {
-    justify-content: center;
-  }
+
 
   .why-banner {
     height: 300px;
@@ -1522,7 +1520,8 @@ margin-top: 30px;
 .vegetable-basket {
   max-width: 100%;
   background-color: whitesmoke;
-  margin: 0 auto;           
+  margin: 0 auto;         
+  border-radius: 40px;  
   padding: 40px 25px;             /* INNER SPACE so text doesn’t touch edges */
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;          
@@ -1553,7 +1552,7 @@ align-content: center;}
       text-align: center;
       align-content: center;
       text-align: justify;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.8;
       color: blue;
       margin-bottom: 20px;
