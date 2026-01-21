@@ -1556,7 +1556,7 @@ align-content: center;}
       line-height: 1.8;
       color: blue;
       margin-bottom: 20px;
-      max-width: 520px;
+    width: 100%;
     }
 
     /* RIGHT IMAGE */
