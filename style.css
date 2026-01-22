@@ -1166,6 +1166,20 @@ color: red;
   padding-left: 20px;
 }
 
+
+@media (max-width: 800px) {
+  .insurance-lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .insurance-lists ul:nth-child(3) {
+    grid-column: 1 / -1; /* spans full width below the first two */
+  }
+}
+
+
+
+
 .insurance-lists li {
   font-size: 14px;
   color: blue;
@@ -1204,7 +1218,7 @@ color: red;
   display: flex;
     padding: 0 30px;
   
-  gap: 60px;
+  gap: 80px;
 }
 
 /* LEFT */
@@ -1633,7 +1647,7 @@ align-content: center;}
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 /* CONTENT BOX */
