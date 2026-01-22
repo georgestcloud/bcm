@@ -18,7 +18,9 @@
 
 /* Neutral fade so text is readable */
 .footer-overlay {
-  background: rgba(0, 0, 0, 0.45); /* NOT yellow */
+background: #0f74b8;
+
+
  padding: 0 40px;
   border-radius: 40px;
   
@@ -38,7 +40,7 @@
 
 .footer-text {
   text-align: justify;
-  font-size: 13px;
+  font-size: 15px;
 
   max-width: 100%
 }
@@ -129,10 +131,6 @@
 }
 
 
-
-
-
-
 /* COLUMNS */
 .footer-column {
   flex: 1;
@@ -161,7 +159,7 @@ text-align: center;
 
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* MOBILE */
@@ -169,6 +167,10 @@ text-align: center;
   .footer-container {
     justify-content: center;
     flex-direction: column;
+      gap: 30px;
+    flex-direction: column;
+    align-items: center;   /* centers blocks */
+    text-align: center;    /* centers text */
   }
 
   .footer-overlay {
@@ -178,7 +180,7 @@ text-align: center;
   .footer-text,
   .footer-column a {
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     align-items: center;
     justify-content: center;
   }
@@ -194,16 +196,8 @@ text-align: center;
 
 
 
-
-
-
 @media (max-width: 600px) {
-  .footer-container {
-    gap: 40px;
-    flex-direction: column;
-    align-items: center;   /* centers blocks */
-    text-align: center;    /* centers text */
-  }
+ 
 
   
   .footer-left,
@@ -212,15 +206,17 @@ text-align: center;
     align-items: center;
   }
 
-  .footer-text {
-    font-size: 13px;
-    text-align: center; /* override justify on mobile */
-  }
 
   .social-icons {
     justify-content: center;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -1157,7 +1153,7 @@ color: red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 70px;
-  max-width: 1100px;
+  max-width: auto;
   margin: auto;
 }
 
@@ -1181,7 +1177,7 @@ color: red;
 
 
 .insurance-lists li {
-  font-size: 14px;
+  font-size: 15px;
   color: blue;
   margin-bottom: 10px;
   cursor: pointer;
