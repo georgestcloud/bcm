@@ -1040,7 +1040,7 @@ background-color: whitesmoke;
 .icons-row {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 70px;
   color: blue;
   flex-wrap: wrap;
 }
@@ -1078,9 +1078,9 @@ background-color: whitesmoke;
 }
 
 .item span {
-  font-size: 16px;
+  font-size: 17px;
   color: #222;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 /* subtle hover like modern insurance sites */
