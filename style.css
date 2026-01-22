@@ -1362,7 +1362,7 @@ color: red;
 .elephant-nav-list a span {
    
     color: blue !important;  /* Set your blue color */
-    font-weight: bold;
+    font-weight: 700;
 }
 
   
@@ -1381,7 +1381,7 @@ color: red;
     z-index: 999;
     list-style: none;
     display: flex;
-    gap: 35px;
+    gap: 45px;
 
   }
   .elephant-nav-list li {
@@ -1456,7 +1456,7 @@ color: red;
     .elephant-nav-list {
       z-index: 999;
       display: none;
- 
+ gap: 35px;
       flex-direction: column;
       width: 100%;
       position: absolute;
