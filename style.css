@@ -1040,14 +1040,25 @@ background-color: whitesmoke;
 .icons-row {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
   color: blue;
   flex-wrap: wrap;
 }
 
+
+@media (max-width: 800px) {
+.icons-row {
+    font-size: 21px;
+    gap: 40px;
+  }
+  .item i {
+ 
+  font-size: 35px;}
+}
+
 .icons-row .item i {
   color: #092A95; /* insurance-style blue */
-  font-size: 32px; /* adjust if needed */
+  font-size: 35px; /* adjust if needed */
 }
 
 .item {
@@ -1067,7 +1078,7 @@ background-color: whitesmoke;
 }
 
 .item span {
-  font-size: 14px;
+  font-size: 16px;
   color: #222;
   font-weight: 500;
 }
@@ -1099,6 +1110,7 @@ background-color: whitesmoke;
 .item i,
 .item span {
   transition: color 0.25s ease, transform 0.25s ease;
+  font-size: 14px;
 }
 
 /* hover (desktop) */
