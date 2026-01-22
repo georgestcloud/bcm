@@ -28,7 +28,7 @@ background: #0f74b8;
 
 .footer-container {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -163,7 +163,7 @@ text-align: center;
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .footer-container {
     justify-content: center;
     flex-direction: column;
@@ -196,7 +196,7 @@ text-align: center;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
  
 
   
@@ -284,7 +284,7 @@ text-align: center;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .about- left p {
     font-size: 13px;
   }
@@ -305,7 +305,7 @@ text-align: center;
     
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
   .about-right {
     margin-top: 2px !important;
   }
@@ -386,14 +386,14 @@ text-align: center;
     
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .title {
     font-size: 11px;
   }
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .item i {
     font-size: 18px !important; /* smaller size on mobile */
   }
@@ -420,7 +420,7 @@ text-align: center;
  
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .footer-logo {
 object-fit: contain;
     width: 200px;
@@ -576,7 +576,7 @@ font-weight: 700;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .banner-content h1::after {
     width: 80px;   /* reduced underline width */
     height: 2px;
@@ -584,7 +584,7 @@ font-weight: 700;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .banner-content h1 {
     font-size: 16px;
   font-family: "Georgia", "Times New Roman", serif;
@@ -678,7 +678,7 @@ font-weight: 700;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .carousel {
     height: 313px !important;
   }
@@ -1303,8 +1303,8 @@ color: red;
   box-shadow: 0 13px 23px #102635; /* red shadow */
 }
 
-/* RESPONSIVE: BELOW 600PX */
-@media (max-width: 600px) {
+/* RESPONSIVE: BELOW 800PX */
+@media (max-width: 800px) {
   .sectors-container {
     flex-direction: column;
     gap: 40px;
@@ -1785,78 +1785,6 @@ align-content: center;}
     gap: 35px;                 /* space between stacked items */
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
