@@ -816,71 +816,23 @@ background-color: whitesmoke;
       line-height: 1.5; 
   text-align: justify;
 
-  font-weight: 400;
+   position: relative;
+  min-height: 100vh;
+  margin: 0;
+  z-index: 0;
+  
   }
   
-  
-  
-  .kala { color: #B8705D; }
-  
-  @media (max-width: 800px) {
-  .eze {
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 15px;
-    padding: 12px;
-  }
-  }
-  
-  
-  @media (max-width: 800px) {
-  body {
-    font-size: 14px;
-    overflow-x: hidden; 
-      margin: 0;
-      }
-  }
   
 
 
 
-  
-  h1 {
-  color: black;
-  font-size: 24px;
-  text-align: center;
-  }
-  
-  
-  @media (max-width: 800px) {
-    h1 {
-        font-size: 22px; 
-        text-align: center; 
-    }
-  }
+
+
   
   
   
   
-  
-  
-  .image {
-    box-shadow: 0 4px 16px rgba(171, 89, 67, 0.8);
-  
-  width: 220px;
-  height: 220px;
-  overflow: hidden;
-  border-radius: 15px;
-  width: 100%;
-  height: auto;
-  }
-  
-  @media (min-width: 1400px) {
-            .image {
-                width: 150px;
-                height: 150px; 
-            }
-        }
   
   
   
@@ -1129,6 +1081,31 @@ background-color: whitesmoke;
 
   
   
+.insurance-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("background.jpg"); /* change this */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.insurance-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.85),
+      rgba(255,255,255,0.85)
+    ),
+    url("bc.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 
 
   
@@ -1139,6 +1116,9 @@ background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
+   position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .insurance-title {
