@@ -1864,15 +1864,16 @@ align-content: center;}
   padding: 25px;
   border-radius: 22px;
   box-shadow: 0 10px 30px rgba(0, 90, 255, 0.15);
-  height: 250px;
+  height: auto;
   display: flex;
-   max-height: 320px; /* adjust if needed */
-  overflow-y: auto;
+  
+  overflow: hidden;
   flex-direction: column;
     transition: height 0.3s ease;
      scrollbar-color: red #f1f1f1;
   scrollbar-width: thin;
-  overflow-x: hidden;
+ 
+  
   position: relative;
 }
 
@@ -1898,7 +1899,9 @@ align-content: center;}
 }
 
 .strength-card.expanded .text {
-  max-height: 1000px;        /* large enough to show all */
+ 
+  max-height: 200px;   /* visible area */
+  overflow-y: auto; 
 }
 
 
