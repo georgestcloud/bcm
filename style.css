@@ -1090,11 +1090,11 @@ background-color: whitesmoke;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  
 }
 
 
 
-  
   
   .insurance-section {
   padding: 0px 40px;
@@ -1580,6 +1580,7 @@ align-content: center;}
       height: 280px;
       object-fit: cover;
       border-radius: 45px;
+      
     }
 
 
@@ -1711,9 +1712,17 @@ align-content: center;}
 
 
 .featured-section {
-  padding: 60px 0;
+  padding: 30px 0;
   background: #f8fafc; /* optional light background */
 }
+
+@media (max-width: 700px) {
+  .featured-section {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+  }}
 
 .section-header {
   max-width: 800px;
