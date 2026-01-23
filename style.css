@@ -1085,27 +1085,13 @@ background-color: whitesmoke;
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("background.jpg"); /* change this */
+  background-image: url("bc.png"); /* change this */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-.insurance-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      rgba(255,255,255,0.85),
-      rgba(255,255,255,0.85)
-    ),
-    url("bc.png");
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
 
 
   
