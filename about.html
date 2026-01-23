@@ -214,7 +214,9 @@ Madiebo & Company Insurance Brokers Limited">
   <h2>What We Do?</h2>
   
 <small>Our primary functions as Insurance Brokers include among other things the following;</small>
-  <div class="strengths-grid">
+
+
+<div class="strengths-grid">
 
     <div class="strength-card">
       <i class="fa-solid fa-shield-heart icon"></i>
@@ -688,6 +690,46 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+
+
+<script>
+document.querySelectorAll('.read-more').forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.stopPropagation(); // prevent immediate close
+
+    const card = this.closest('.strength-card');
+
+    // close all other cards
+    document.querySelectorAll('.strength-card.expanded').forEach(c => {
+      if (c !== card) {
+        c.classList.remove('expanded');
+        c.querySelector('.read-more').textContent = 'Read more';
+      }
+    });
+
+    // toggle current card
+    card.classList.toggle('expanded');
+    this.textContent = card.classList.contains('expanded')
+      ? 'Read less'
+      : 'Read more';
+  });
+});
+
+// CLICK OUTSIDE → CLOSE ALL
+document.addEventListener('click', function () {
+  document.querySelectorAll('.strength-card.expanded').forEach(card => {
+    card.classList.remove('expanded');
+    card.querySelector('.read-more').textContent = 'Read more';
+  });
+});
+</script>
+
+
+
+
+
 <script>
   AOS.init({
     duration: 1000,   // animation duration
