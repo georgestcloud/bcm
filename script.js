@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -62,16 +63,40 @@ startAutoSlide();
 
 
 
+const mvItems = document.querySelectorAll('.mv-item');
+const mvButtons = document.querySelectorAll('.mv-header');
 
-    document.querySelectorAll('.mv-header').forEach(button => {
-      button.addEventListener('click', () => {
-        const item = button.parentElement;
+// toggle on button click
+mvButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.stopPropagation(); // stop document click
 
-        document.querySelectorAll('.mv-item').forEach(i => {
-          if (i !== item) i.classList.remove('active');
-        });
+    const item = button.closest('.mv-item');
 
-        item.classList.toggle('active');
-      });
+    // close other items
+    mvItems.forEach(i => {
+      if (i !== item) i.classList.remove('active');
     });
 
+    // toggle current
+    item.classList.toggle('active');
+  });
+});
+
+// close all when clicking outside
+document.addEventListener('click', () => {
+  mvItems.forEach(item => item.classList.remove('active'));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+    
