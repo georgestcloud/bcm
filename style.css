@@ -1603,16 +1603,6 @@ align-content: center;}
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* SCREEN EDGE CONTROL */
 .france-wrapper {
   margin-left: 15px;
@@ -1663,26 +1653,6 @@ align-content: center;}
   margin-right: 8px;   /* space between icon and text */
   color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1829,56 +1799,6 @@ align-content: center;}
 
 
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .split-layout {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 50% / 50% */
@@ -1892,21 +1812,6 @@ align-content: center;}
     gap: 35px;                 /* space between stacked items */
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2080,4 +1985,295 @@ align-content: center;}
   font-size: 48px;       /* keep your size */
   margin-bottom: 20px;   /* spacing below icon */
   color: red;            /* change icon color to red */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*contacts*/
+
+
+/* Make placeholder text blue */
+input::placeholder,
+textarea::placeholder {
+  color: blue;
+  opacity: 1;
+}
+
+/* Make character counter blue */
+#counter {
+  color: blue;
+}
+
+
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  background: #eef6ef;
+  padding: 40px;
+  align-items: start;
+}
+
+.contact-form,
+.contact-info {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 500;
+  color: blue;
+}
+
+.contact-form h3 { color: red;
+font-size: 35px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+
+.contact-form { font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: blue;
+}
+
+/* TWO COLUMN INPUTS */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 15px 0;
+  color: blue;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.send-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE INFO (PLAIN, NO DROPDOWN) */
+/* RIGHT SIDE INFO CARDS FIX */
+.contact-info {
+  display: grid;
+  align-content: start;
+  gap: 25px; /* space between cards on desktop */
+}
+
+.info-card {
+  background: #fff;
+  border: 1px solid #cfded1;
+  border-radius: 16px;
+  padding: 10px 20px; /* slightly tighter padding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  height: auto; /* remove fixed height */
+}
+
+.info-card h4 {
+  margin: 0 0 4px; /* reduce space below header */
+  font-size: 23px;
+  color: red; /* premium accent */
+}
+
+.info-card small {
+  font-size: 19px;
+  color: blue;
+}
+
+/* optional: icon next to small text */
+.info-card i {
+  margin-right: 6px;
+  color: red;
+  font-size: 25px;
+}
+
+/* RESPONSIVE ADJUSTMENTS (MOBILE ALREADY WORKS) */
+@media (max-width: 800px) {
+  .contact-info {
+    gap: 8px; /* slightly smaller gap on tablets */
+  }
+
+  .info-card {
+    padding: 10px 15px; /* slightly smaller padding */
+  }
+
+  .info-card h4 {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+
+  .info-card small {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info {
+    gap: 6px; /* tight gap for small mobile */
+  }
+
+  .info-card {
+    padding: 8px 12px;
+  }
+
+  .info-card h4 {
+    font-size: 14px;
+  }
+
+  .info-card small {
+    font-size: 12px;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
 }
