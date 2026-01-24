@@ -267,7 +267,7 @@ text-align: center;
     .company-label {
       font-size: 12px;
       letter-spacing: 1px;
-      color: #777;
+      color: red;
       text-transform: uppercase;
     }
 
@@ -316,8 +316,8 @@ text-align: center;
 
     .mv-item {
     
-      border: 1px solid #e5e5e5;
-      margin-bottom: 15px;
+      border: 1px solid skyblue;
+      margin-bottom: 30px;
       color: red;
       border-radius: 35px;
       background: #fff;
@@ -329,8 +329,8 @@ text-align: center;
       padding: 9px 14px;
       background: #ffffff;
       color: red;
-     border: 1px red;
-       border-radius: 8px; 
+     border: 1px;
+       border-radius: 18px; 
       font-size: 14px;
       font-weight: 600;
       display: flex;
@@ -1181,7 +1181,7 @@ color: red;
   .sectors-section {
   background: #0f74b8;
   padding: 60px 20px;
-  border-radius: 35px;
+border-radius: 35px 35px 0 0;
   color: #fff;
 }
 
