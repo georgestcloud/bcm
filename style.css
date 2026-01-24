@@ -1547,7 +1547,7 @@ align-content: center;}
       text-align: justify;
       font-size: 17px;
       line-height: 1.8;
-      color: blue;
+      color: black;
       margin-bottom: 20px;
     width: 100%;
     }
@@ -2277,3 +2277,4 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
