@@ -2038,13 +2038,13 @@ align-content: center;}
 /* Make placeholder text blue */
 input::placeholder,
 textarea::placeholder {
-  color: blue;
+  color: black;
   opacity: 1;
 }
 
 /* Make character counter blue */
 #counter {
-  color: blue;
+  color: black;
 }
 
 
@@ -2069,7 +2069,7 @@ textarea::placeholder {
   display: block;
   margin: 15px 0 6px;
   font-weight: 500;
-  color: blue;
+  color: black;
 }
 
 .contact-form h3 { color: red;
@@ -2086,7 +2086,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: blue;
+  color: black;
 }
 
 /* TWO COLUMN INPUTS */
@@ -2095,7 +2095,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin: 15px 0;
-  color: blue;
+  color: black;
 }
 
 textarea {
@@ -2132,6 +2132,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
   justify-content: center;
   height: auto; /* remove fixed height */
 }
@@ -2144,7 +2145,7 @@ textarea {
 
 .info-card small {
   font-size: 19px;
-  color: blue;
+  color: black;
 }
 
 /* optional: icon next to small text */
