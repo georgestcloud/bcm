@@ -99,4 +99,72 @@ document.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+function initMap() {
+  // 1. Choose the coordinates (latitude & longitude)
+  const myLocation = { lat: 6.437510255195223, lng: 3.5578414032709262 }; 
+
+  // 2. Create the map
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: myLocation, // Center the map at this location
+    zoom: 14,           // Zoom level (1 = world, 20 = street)
+  });
+
+  // 3. Add a marker at that location
+  const marker = new google.maps.Marker({
+    position: myLocation,
+    map: map,
+    title: "My Location", // Hover text
+  });
+}
+
+
+
+
+
+
+
+
+
+
+  // character counter
+  const textarea = document.getElementById('message');
+  const counter = document.getElementById('counter');
+
+  textarea.addEventListener('input', () => {
+    counter.textContent = `${500 - textarea.value.length} characters remaining`;
+  });
+
+  // accordion
+  document.querySelectorAll('.info-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const box = header.parentElement;
+
+      document.querySelectorAll('.info-box').forEach(b => {
+        if (b !== box) b.classList.remove('open');
+      });
+
+      box.classList.toggle('open');
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
