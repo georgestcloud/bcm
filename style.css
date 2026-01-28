@@ -2244,6 +2244,77 @@ textarea {
 /*Services  Page*/
 
 
+.services {
+  padding: 60px 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  .services-grid { gap: 50px;}}
+
+.service-card {
+  background: #f4f6f5;
+  border: 2px solid blue;
+  padding: 30px 15px 25px;
+  text-align: center;
+  position: relative;
+  border-radius: 25px;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-circle i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.service-card h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: red;
+  font-weight: 700;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.service-card a {
+  color: whitesmoke;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
 .category-slider {
   width: 100%;
   overflow: hidden;
