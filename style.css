@@ -2246,8 +2246,21 @@ textarea {
 
 
 .services {
-  padding: 60px 40px;
+  position: relative;
+  padding: 40px 40px;
 }
+
+.services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("45.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -1;
+}
+
 
 .services-grid {
   display: grid;
@@ -2500,12 +2513,13 @@ color: black;
 
 /* IMAGE FIX — STAYS INSIDE SECTION */
 .insurance-right img {
-  width: 350px;
-  height: auto;
+  width: 450px;
+  height: 350px;
+  padding-top: 20px;
   object-fit: contain;
   border-radius: 50px;
   background: #fff;
-  padding: 20px;
+
   object-fit: cover;
 }
 
