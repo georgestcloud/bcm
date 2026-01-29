@@ -746,7 +746,7 @@ background-color: whitesmoke;
   color: black;
       line-height: 1.5; 
   text-align: justify;
-
+ overflow-x: hidden; 
    position: relative;
   min-height: 100vh;
   margin: 0;
@@ -2248,6 +2248,8 @@ textarea {
 .services {
   position: relative;
   padding: 40px 40px;
+
+  ;
 }
 
 .services::before {
@@ -2257,7 +2259,7 @@ textarea {
   background-image: url("45.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(3px);
+  filter: blur(5px);
   z-index: -1;
 }
 
