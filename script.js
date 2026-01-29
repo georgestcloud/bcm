@@ -168,3 +168,29 @@ function initMap() {
 
 
     
+
+
+
+
+
+
+
+
+  const dropdowns = document.querySelectorAll("details");
+
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.removeAttribute("open");
+      }
+    });
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.removeAttribute("open");
+      });
+    });
+  });
