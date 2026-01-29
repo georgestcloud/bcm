@@ -634,6 +634,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+<script>
+  document.querySelectorAll(".dropdown").forEach(dropdown => {
+    dropdown.addEventListener("click", function (e) {
+      if (e.target.tagName.toLowerCase() !== "summary") {
+        this.querySelector("summary").click();
+      }
+    });
+  });
+</script>
 
 
 
