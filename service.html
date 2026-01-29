@@ -315,6 +315,68 @@ Madiebo & Company Insurance Brokers Limited">
 
 
 
+<section class="insurance-hero">
+
+  <!-- LEFT: DROPDOWN -->
+  <div class="insurance-left">
+    <h1>Insurance Made Easy</h1>
+
+    <details class="dropdown">
+      <summary>Buy insurance now</summary>
+      <p>Purchase insurance quickly and securely.</p>
+    </details>
+
+    <details class="dropdown">
+      <summary>Renew Policy</summary>
+      <p>Renew your existing policy in minutes.</p>
+    </details>
+
+    <details class="dropdown">
+      <summary>Make a claim</summary>
+      <p>File and track insurance claims easily.</p>
+    </details>
+
+    <details class="dropdown">
+      <summary>Get Quotation</summary>
+      <p>Request a custom insurance quotation.</p>
+    </details>
+
+    <details class="dropdown">
+      <summary>24/7 customer support</summary>
+      <p>We are always available to help you.</p>
+    </details>
+  </div>
+
+  <!-- RIGHT: IMAGE -->
+  <div class="insurance-right">
+    <img src="new.jpeg" alt="Insurance App Preview">
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="insurance-section">
   
@@ -323,7 +385,7 @@ Madiebo & Company Insurance Brokers Limited">
     <span></span>
     
   </h2>
-<p class="why-subtitle" style="color: black; text-align: center;">AS PROVIDED IN  THE 2003 INSURANCE ACT, BELOW ARE SOME OF THE CLASSES OF INSURANCE WE COVER: </p><br>
+<p class="why-subtitle" style="color: black; font-weight: 700; text-align: center;">AS PROVIDED IN  THE 2003 INSURANCE ACT, BELOW ARE SOME OF THE CLASSES OF INSURANCE WE COVER: </p><br>
   <div class="insurance-lists">
 
     <ul>
@@ -373,10 +435,6 @@ Madiebo & Company Insurance Brokers Limited">
 
   </div>
 </section>
-
-
-
-
 
 
 
@@ -558,7 +616,68 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const dropdowns = document.querySelectorAll("details");
+
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.removeAttribute("open");
+      }
+    });
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.removeAttribute("open");
+      });
+    });
+  });
+</script>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="script.js"></script>
 <script>
@@ -608,7 +727,7 @@ document.querySelectorAll(".read-more").forEach(button => {
 
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-]
+
 
 
 
