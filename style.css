@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  border-radius: 40px;
+  border-radius: 0px 0px 40px 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@ background: #0f74b8;
 
 
  padding: 0 40px;
-  border-radius: 40px;
+  border-radius: 0px 0px 40px 40px;
   
 }
 
@@ -2241,6 +2241,7 @@ textarea {
 
 
 
+
 /*Services  Page*/
 
 
@@ -2257,7 +2258,7 @@ textarea {
   .services-grid { gap: 50px;}}
 
 .service-card {
-  background: #f4f6f5;
+  background: blue;
   border: 2px solid blue;
   padding: 30px 15px 25px;
   text-align: center;
@@ -2288,14 +2289,16 @@ textarea {
   margin-top: 10px;
   margin-bottom: 15px;
   font-size: 20px;
-  color: red;
+  color: white;
   font-weight: 700;
 }
 
 .service-card p {
   font-size: 15px;
   line-height: 1.6;
-  color: black;
+  color: white;
+  text-align: justify;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -2398,3 +2401,129 @@ textarea {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.insurance-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+color: black;
+}
+
+/* LEFT */
+.insurance-left {
+  flex: 1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.insurance-left h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* DROPDOWN */
+.dropdown {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 18px 22px;
+  background-color: red;
+    cursor: pointer;
+ transition: box-shadow 0.25s ease, transform 0.2s ease;}
+
+/* HOVER EFFECT */
+.dropdown:hover {
+  box-shadow:
+    0 0 0 3px rgba(0, 140, 255, 1),      /* sharp blue outline */
+    0 12px 30px rgba(0, 140, 255, 0.7);  /* strong glow */
+  transform: translateY(-3px);
+}
+
+.dropdown summary {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown summary::after {
+  content: "➜";
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.dropdown p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* RIGHT */
+.insurance-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE FIX — STAYS INSIDE SECTION */
+.insurance-right img {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50px;
+  background: #fff;
+  padding: 20px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .insurance-hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .insurance-left h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .insurance-right img {
+    width: 350px;
+    height: 300px;
+  
+  }
+}
