@@ -1792,10 +1792,12 @@ align-content: center;}
 /* CARD */
 .strength-card {
   background: #ffffff;
+   border: 2px solid transparent;
   padding: 25px;
-  border-radius: 22px;
+  border-radius: 22px !important;
   box-shadow: 0 10px 30px rgba(0, 90, 255, 0.15);
   height: auto;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* smooth effect */
   display: flex;
   
   
@@ -1807,6 +1809,11 @@ align-content: center;}
  
   
   position: relative;
+}
+
+.strength-card:hover {
+  border: 3px solid #1E90FF; /* blue, slightly thick */
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.2); /* subtle blue glow */
 }
 
 
