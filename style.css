@@ -2628,8 +2628,8 @@ color: black;
 
 .bcm-section {
       padding: 50px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
+    
+   width: 100px;
        background-color: #F5F5F5;
          box-sizing: border-box;
     }
@@ -2708,3 +2708,4 @@ color: black;
         font-size: 28px;
       }
     }
+
