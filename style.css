@@ -2578,6 +2578,7 @@ color: black;
       padding: 50px 20px;
       max-width: 1200px;
       margin: 0 auto;
+      background-color: #F5F5F5;
     }
 
     .bcm-header h2 {
@@ -2649,3 +2650,4 @@ color: black;
         font-size: 28px;
       }
     }
+
