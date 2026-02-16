@@ -2689,6 +2689,7 @@ color: black;
     .bcm-card p {
       font-size: 16px;
       line-height: 1.6;
+      text-align: justify;
       color: #ffffff; /* white paragraph text */
     }
 
@@ -2708,6 +2709,7 @@ color: black;
         font-size: 28px;
       }
     }
+
 
 
 
