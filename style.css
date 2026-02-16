@@ -2574,11 +2574,64 @@ color: black;
 
 
 
-    .bcm-section {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bcm-section {
       padding: 50px 20px;
       max-width: 1200px;
       margin: 0 auto;
-      background-color: #F5F5F5;
+       background-color: #F5F5F5;
+         box-sizing: border-box;
     }
 
     .bcm-header h2 {
@@ -2587,6 +2640,11 @@ color: black;
       color: red;
       margin-bottom: 10px;
     }
+
+    .bcm-container {
+  max-width: 1200px; /* content width */
+  margin: 0 auto;    /* center content */
+}
 
     .subtitle {
       text-align: center;
@@ -2650,4 +2708,3 @@ color: black;
         font-size: 28px;
       }
     }
-
