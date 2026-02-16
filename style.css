@@ -2628,7 +2628,7 @@ color: black;
 
 .bcm-section {
       padding: 50px 20px;
-      max-width: 1200px;
+     width: 100%;
       margin: 0 auto;
     
          box-sizing: border-box;
@@ -2656,7 +2656,7 @@ color: black;
     .bcm-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 34px;
     }
 
     .bcm-card {
@@ -2709,6 +2709,7 @@ color: black;
         font-size: 28px;
       }
     }
+
 
 
 
