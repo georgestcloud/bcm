@@ -509,7 +509,7 @@ object-fit: contain;
 }
 .why-banner {
   position: relative;
-  height: 300px;
+  height: 320px;
   object-fit: contain;
   overflow: hidden;
  
@@ -2711,6 +2711,7 @@ color: black;
         font-size: 28px;
       }
     }
+
 
 
 
