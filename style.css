@@ -611,14 +611,16 @@ object-fit: contain;
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .carousel {
     height: 330px !important;
   }
 
   .slide {
-    object-fit: contain;    /* show full image, no cropping */
+      /* show full image, no cropping */
     background: #fff;       /* optional: avoids ugly gaps */
+  position: relative;
+  height: 100%;
   }
 }
 
@@ -639,13 +641,13 @@ object-fit: contain;
 .slides {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* IMPORTANT: no zoom */
   
   opacity: 0;
   transition: opacity 0.5s ease;
