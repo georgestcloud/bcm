@@ -510,7 +510,7 @@ object-fit: contain;
 .why-banner {
   position: relative;
   height: 360px;
-  object-fit: contain;
+  
   overflow: hidden;
  
 }
@@ -527,7 +527,7 @@ object-fit: contain;
 
 
 /* HOVER EFFECT */
-.why-banner:hover img {
+.banner:hover img {
   transform: scale(1.08) translateY(-10px);
 }
 
@@ -2710,7 +2710,6 @@ color: black;
         font-size: 28px;
       }
     }
-
 
 
 
