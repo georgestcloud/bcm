@@ -616,7 +616,7 @@ object-fit: contain;
   }
 
   .slide {
-    object-fit: contain;    /* show full image, no cropping */
+    object-fit: cover;    /* show full image, no cropping */
     background: #fff;       /* optional: avoids ugly gaps */
   }
 }
